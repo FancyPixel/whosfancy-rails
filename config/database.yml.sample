@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  host:     localhost
+  username: username
+  password: password
+
+development:
+  <<: *default
+  database: whosfancy_development
+
+test:
+  <<: *default
+  database: whosfancy_test
+
+production:
+  <<: *default
+  database: whosfancy_production
