@@ -27,6 +27,19 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'spring',        group: :development
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'guard-rspec'
+end
+
+group :test do
+  gem 'shoulda-matchers'
+  gem 'faker'
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'database_cleaner'
+end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
