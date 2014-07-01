@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Nunito:300,400);
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.head {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  vertical-align: middle;
+  font-size: 2em;
+  font-weight: 400;
+  background: #C0392B;
+  color: white;
+  text-align: center;
+
+}
+
+.entry {
+  padding: 5px;
+}
+
+.round {
+  @include border-radius(4px);
+}
+
+.text {
+  padding: 10px
+}
+
+.user {
+  font-size: 1.5em;
+}
+
+.time {
+  font-size: 0.8em;
+  color: #999;
+}
+
+.checkin {
+  border: 2px #27ae60 solid;
+}
+
+.checkout {
+  border: 2px #e74c3c solid;
+}

@@ -1,0 +1,11 @@
+.head Who's Fancy?
+
+- @checkins.each do |checkin|
+  .row.entry
+    .small-12.medium-6.small-centered.column.round{class: checkin.in? ? 'checkin' : 'checkout' }
+      .text 
+        .user
+          = checkin.user.email.split('@').first
+        .time
+          = "#{time_ago_in_words(checkin.created_at)} ago"
+
